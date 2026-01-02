@@ -1,3 +1,6 @@
+##Começando a aprender o básico de novo após concluir o curso do SENAI
+
+
 ##---------------Exercicio 01------------------------
 
 nome = input("Qual seu nome:")
