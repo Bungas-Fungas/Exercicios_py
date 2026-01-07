@@ -37,4 +37,17 @@ print('{} * 10 = {}'.format(n1,n1*10))
 d= int(input('Digite um valor em reais: '))
 print('Você consegue comprar {} dólares'.format(n/3.27))
 
-## 7:
+## 7: ler a largura e a altura de uma parede,calcular a area e a quantidade de tinta necessaria para pinta-la, cada litro de tinta printa 2m²
+l= int(input('largura: '))
+a= int(input('altura: '))
+area= l*a
+qnt_tinta=area/2
+print('para pintar essa parede com area de {} sera necessario {} litros de tinta'.format(area,qnt_tinta))
+
+## 8: ler um preco e mostrar com 5% de descoto
+p= float(input('Digite o preco: '))
+print('Apos o desconto o produto custara {} reais'.format(p*0.95))
+
+## 9: ler um salario e mostrar um novo com aumento de 15%
+s= int(input('seu salario: '))
+print('Apos o aumento seu salario de {} passara a ser {}'.format(s,s+s*0.15))
