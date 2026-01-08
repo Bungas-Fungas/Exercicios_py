@@ -14,3 +14,7 @@ raiz = sqrt(num)
 ## ceil arredonda para cima
 ## floor arredonda para baixo
 print('A raiz quadrada de {} é igual a {}'.format(num,raiz))
+
+import random
+num = random.randint(1,10)
+print(num)
