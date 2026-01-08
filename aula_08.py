@@ -18,3 +18,6 @@ print('A raiz quadrada de {} é igual a {}'.format(num,raiz))
 import random
 num = random.randint(1,10)
 print(num)
+
+import emoji 
+print(emoji.emojize("olá mundo :earth_americas:", language='alias'))
