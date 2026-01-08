@@ -16,8 +16,10 @@ raiz = sqrt(num)
 print('A raiz quadrada de {} é igual a {}'.format(num,raiz))
 
 import random
+## randint escolhe um numero aleatorio dentro de uma qunatidade escolhida
 num = random.randint(1,10)
 print(num)
 
+##baixando biblioteca pelo terminal usando pip
 import emoji 
 print(emoji.emojize("olá mundo :earth_americas:", language='alias'))
