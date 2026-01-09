@@ -23,3 +23,5 @@ print(num)
 ##baixando biblioteca pelo terminal usando pip
 import emoji 
 print(emoji.emojize("olá mundo :earth_americas:", language='alias'))
+
+import pygame
