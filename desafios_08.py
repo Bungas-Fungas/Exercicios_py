@@ -48,19 +48,17 @@ print('O sorteado foi {}'.format(s))
 
 ## 5: ler o nome de 4 alunos e sortar uma ordem de apresentação
 
-from random import sample
+from random import sample,shuffle
 n1 = str(input('Nome do primeiro aluno: '))
 n2 = str(input('Nome do segundo aluno:'))
 n3 = str(input('Nome do terceiro aluno: '))
 n4 = str(input('Nome do quarto aluno: '))
 lista = [n1,n2,n3,n4]
+## sample embaralha trazendo uma nova lista e nao modificando a original
 o = sample(lista,4)
+## shuffle embaralha diretamente a lista
+o = shuffle(lista)
 print('A lista de sorteados é : {}'.format(o))
-
-
-
-
-
 
 
 
