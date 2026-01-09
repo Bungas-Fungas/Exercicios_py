@@ -9,7 +9,32 @@ print(int(num))
 
 ## 2: ler o comprimento do cateto oposto e do adjacente de um triangulo retangulo e calcular a hipotenusa
 
+co= float(input('Informe o comprimento do cateto oposto: '))
+ca= float(input('Informe o comprimento do cateto adjacente: '))
+
+## usando a formula
+h= ((ca**2)+(co**2))**(1/2)
+print('A hipotenusa medirá: {:.2f} '.format(h))
+
+## usando a biblioteca math
+h= math.hypot(co,ca)
+print('A hipotenusa medirá: {:.2f} '.format(h))
+## deixa o codigo mais simples 
+
+
+
+
 ## 3: ler um angulo qualquer e mostrar o valor do seu seno cosseno e tangente
+
+a= int(input('Informe um ângulo qualquer: '))
+
+sen=math.sin(math.radians(a))
+cos= math.cos(math.radians(a))
+tan= math.tan(math.radians(a))
+print('O seno deste ângulo é {:.2f} o cosseno é {:.2f} e a tangente é {:.2f}'.format(sen,cos,tan))
+
+
+
 
 ## 4: ler o nome de 4 pessoas e sortear um
 import random
