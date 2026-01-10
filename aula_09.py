@@ -34,3 +34,9 @@ print('Curso' in frase)## ao inves de retornar a posicao na frase como o find o 
 
 print(frase.replace('Python','Android'))## troca uma parte da string por outra
 print(frase.upper())## deixa a frase em maiusculo
+print(frase.lower())## deixa a frase em minusculo
+print(frase.capitalize())## deixa so o primeiro caracter em maiusculo e o resto fica em minusculo
+print(frase.title())## analisa quantas palavras tem a string e cada palavra comecara com maiusculo e o resto fica em minusculo
+print(frase.strip())## remove todos os espaços inuteis no inicio e no final da string
+print(frase.rstrip())## remove os espaços inuteis a direita
+print(frase.lstrip())## remove os espacos inuteis a esquerda
