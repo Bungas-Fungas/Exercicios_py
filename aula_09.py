@@ -45,6 +45,11 @@ print(frase.lstrip())## remove os espacos inuteis a esquerda
 
 print(frase.split())## gera uma lista com as palavras de uma cadeia de caracteres 
 print('-'.join(frase))## junta palavras separadas em listas e usa '-' como separador ex: Olá-Mundo!
+##----------------------
+
+print("""ichard McClintock, um professor de latim do Hampden-Sydney College na Virginia, pesquisou uma das mais obscuras palavras em latim, consectetur, oriunda de uma passagem de Lorem Ipsum, e, procurando por entre citações da palavra na literatura clássica, descobriu a sua indubitável origem. Lorem Ipsum vem das seções 1.10.32 e 1.10.33 do "de Finibus Bonorum et Malorum" (Os Extremos do Bem e do Mal), de Cícero, escrito em 45 AC. Este livro é um tratado de teoria da ética muito popular na época da Renascença. A prime""")## o uso de tres aspas duplas pode ser usada para imprimir textos grandes
 
 
-print("""ichard McClintock, um professor de latim do Hampden-Sydney College na Virginia, pesquisou uma das mais obscuras palavras em latim, consectetur, oriunda de uma passagem de Lorem Ipsum, e, procurando por entre citações da palavra na literatura clássica, descobriu a sua indubitável origem. Lorem Ipsum vem das seções 1.10.32 e 1.10.33 do "de Finibus Bonorum et Malorum" (Os Extremos do Bem e do Mal), de Cícero, escrito em 45 AC. Este livro é um tratado de teoria da ética muito popular na época da Renascença. A prime""")
+## strings sao imutaveis a nao ser que se utilize uma funcao de transformacao junto a uma atribuicao
+frase = frase.replace('Python','Android')
+print(frase)
