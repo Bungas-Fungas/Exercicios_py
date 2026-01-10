@@ -61,5 +61,4 @@ o = shuffle(lista)
 print('A lista de sorteados é : {}'.format(o))
 
 
-
 ## 6: abrir e reproduzir um arquivo mp3
