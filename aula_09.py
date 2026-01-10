@@ -53,3 +53,4 @@ print("""ichard McClintock, um professor de latim do Hampden-Sydney College na V
 ## strings sao imutaveis a nao ser que se utilize uma funcao de transformacao junto a uma atribuicao
 frase = frase.replace('Python','Android')
 print(frase)
+
