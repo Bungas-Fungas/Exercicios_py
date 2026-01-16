@@ -36,4 +36,9 @@ print('Seu nome tem silva: {}'.format('silva' in nome.lower()))
 
 ## 5: ler uma frase e mostrar quantas vezes aparece a letra 'a', em que posicao ela aparece na primeira vez e qual posicao ela aparece pela ultima vez
 
+frase = str(input('Digite uma frase')).strip().upper()
+print(' A letra A aparece {} vezes nesta frase'.format(frase.count('A')))
+print('A primeira vez que ela aparece é na posicao {}'.format(frase.find('A')+1))
+print(' A ultima letra A aparece na posição {}'.format(frase.rfind('A')+1))
+
 ## 6: ler um nome e mostrar o primeiro e o ultimo nome
