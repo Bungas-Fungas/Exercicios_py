@@ -5,13 +5,29 @@
 nome = str(input("Qual seu nome?:"))
 print(nome.upper())
 print(nome.lower())
-print(nome.count(nome.strip()))
-print(nome.split()[0])
+print(len(nome) - nome.count(' '))
+print(nome.split()[0], len(nome.split()[0]))
+
 
 
 ## 2: ler um numero e mostrar cada digito separado
 
+num = int(input('Digite um número: '))
+u = num // 1 % 10
+d = num // 10 % 10
+c = num // 100 % 10
+m = num // 1000 % 10
+print('Analise do numero {}: '.format(num))
+print('Unidade: {}'.format(u))
+print('Dezena: {}'.format(d))
+print('Centena: {}'.format(c))
+print('Milhar: {}'.format(m))
+
 ## 3: ler o nome de uma cidade e dizer se começa ou nao com o nome 'santo'
+
+cidade = str(input('Em que cidade você nasceu: ')).strip()
+cidade = cidade.lower()
+print(cidade[:5] == 'santo')
 
 ## 4: ler o nome de alguem e dizer se a pessoa tem 'silva' no nome
 
