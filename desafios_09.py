@@ -5,7 +5,7 @@
 nome = str(input("Qual seu nome?:"))
 print(nome.upper())
 print(nome.lower())
-print(nome.strip())
+print(nome.count(nome.strip()))
 print(nome.split()[0])
 
 
