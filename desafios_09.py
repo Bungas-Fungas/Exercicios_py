@@ -44,4 +44,6 @@ print(' A ultima letra A aparece na posição {}'.format(frase.rfind('A')+1))
 ## 6: ler um nome e mostrar o primeiro e o ultimo nome
 
 nome = str(input('Digite seu nome completo: ')).strip()
-print('Seu primeiro nome é {}'.format(nome.split()[0]))
+n = nome.split
+print('Seu primeiro nome é {}'.format(n[0]))
+print('Seu ultimo nome é {}'.format(n[len(n)-1]))
