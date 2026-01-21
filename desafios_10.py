@@ -6,9 +6,9 @@ import random
 num_computador = random.randint(0,5)
 num_usuario = int(input('Tente adivinhar o numero que o computador escolheu (0 a 5): '))
 if(num_computador == num_usuario):
-    print('Você acertou parabéns!!')
+    print('\033[0;32mVocê acertou parabéns!!\033[m')
 else:
-    print('Você errou, tente novamente')
+    print('\033[0;31mVocê errou, tente novamente\033[m')
 
 
 ## desafio 02: ler a velocidade de um carro, se o carro estiver acima de 80km/h ele é multado em 7R$ por cada km acima
@@ -16,14 +16,14 @@ else:
 vel_carro = int(input('Qual a velocidade de seu carro: '))
 multa = (vel_carro-80)*7
 if(vel_carro > 80):
-    print('Você foi multado em {:.2f}R$!'.format(multa))
+    print('Você foi {}multado{} em {}{:.2f}R${}!'.format('\033[0;31m','\033[m','\033[0;33m',multa,'\033[m'))
 else:
     print('Você esta livre para ir')
 
 ## desafio 03: ler um número e dizer se ele é par ou impar
 num = int(input('Digite um número: '))
 if(num %2==0):
-    print('O número {} é um numero par'.format(num))
+    print('O número {}{}{} é um numero par'.format('\033[0;34m',num,'\033[m'))
 else:
     print('O número {} é um número ímpar'.format(num))
 
@@ -31,7 +31,7 @@ else:
 distancia = int(input('Digite a distância de sua viagem: '))
 if(distancia <= 200):
     preco = distancia*0.5
-    print('A sua viagem custará {:.2f}R$'.format(preco))
+    print('A sua viagem custará \033[0;33m{:.2f}R$\033[m'.format(preco))
 else:
     preco = distancia*0.45
     print('A sua viagem custará {:.2f}R$'.format(preco))
@@ -39,7 +39,7 @@ else:
 ## desafio 05: ler um ano e dizer se ele é bissexto
 ano = int(input('Digite um ano qualquer: '))
 if(ano %4==0 and ano%100==0 or ano%400==0):
-    print('Esse ano é bissexto.')
+    print('Esse ano é \033[0;36mbissexto.\033[m')
 else:
     print('Esse ano não é bissexto')
 

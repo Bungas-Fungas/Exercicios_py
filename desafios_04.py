@@ -2,27 +2,27 @@
 
 ## 1: ler um numero intero e mostrar seu sucessor e antecessor
 n = int(input('Digite um valor:'))
-print(' O antecessor de {} é {} e o seu sucessor é {}'.format(n,(n-1),(n+1)))
+print(' O antecessor de \033[0;35m{}\033[m é {} e o seu sucessor é {}'.format(n,(n-1),(n+1)))
 
 ## 2: ler um numero e mostrar seu dobro, triplo e raiz quadrada
 n= int(input('Digite um valor:'))
-print('O dobro de {} é {} o triplo é {} e sua raiz quadrada é {:.2f}'.format(n,(n*2),(n*3),(n**(1/2))))
+print('O dobro de {} é \033[0;36m{}\033[m o triplo é \033[0;34m{}\033[m e sua raiz quadrada é \033[0;32m{:.2f}\033[m'.format(n,(n*2),(n*3),(n**(1/2))))
 
 ## 3: ler duas notas e mostrar a media
 n1 = float(input('primeira nota:'))
 n2 = float(input('segunda nota: '))
 m = (n1+n2)/2
-print('A média é de {:.1f}'.format(m))
+print('A média é de \033[1;31;42m{:.1f}\033[m'.format(m))
 
 ## 4: ler um valor em metros e exibir convertido em centimetro e milimetro
 n1 = float(input('digite um valor em metros: '))
 c= n1*100
 mm = n1*1000
-print('para centimetros resulta em {:.0f} e para milimetros em {:.0f}'.format(c,mm))
+print('para centimetros resulta em \033[0;36m{:.0f}\033[m e para milimetros em {:.0f}'.format(c,mm))
 
 ## 5: ler um numero inteiro e mostrar sua tabuada
 n1 = int(input('digite um numero inteiro: '))
-print('-'*12)
+print('\033[1;32;45m-\033[m'*12)
 print('{} * 1 = {}'.format(n1,n1*1))
 print('{} * 2 = {}'.format(n1,n1*2))
 print('{} * 3 = {}'.format(n1,n1*3))
@@ -33,7 +33,7 @@ print('{} * 7 = {}'.format(n1,n1*7))
 print('{} * 8 = {}'.format(n1,n1*8))
 print('{} * 9 = {}'.format(n1,n1*9))
 print('{} * 10 = {}'.format(n1,n1*10))
-print('-'*12)
+print('\033[1;36;45m-\033[m'*12)
 
 ## 6: ler quanto dinheiro alguem tem e converter para dolar
 d= float(input('Digite um valor em reais: '))
