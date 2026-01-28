@@ -71,3 +71,56 @@ elif(idade<=20):
     print('Você está na categoria Sênior!')
 else:
     print('Você está na categoria Master!')
+
+
+## Desafio 07: desafio 35 acrescentar o recurso de mostrar o tipo do triangulo q sera formado
+
+reta1 = int(input('Digite o valor para uma reta: '))
+reta2 = int(input('Digite mais um: '))
+reta3 = int(input('Digite mais um: '))
+
+if(reta1+reta2>reta3 or reta1+reta3>reta2 or reta2+reta3>reta1):
+    print('Com essas três retas é possível formar um triângulo.')
+    if(reta1 == reta2 or reta1==reta2 or reta2==reta3):
+        print('O triangulo formado sera um triangulo isóceles')
+    elif(reta1==reta2 and reta2==reta3):
+        print('O triangulo formado sera um triangulo equilátero')
+    else:
+        print('O triangulo formado sera um triangulo escaleno')
+else:
+    print('Com essas três retas não é possível formar um triângulo.')
+
+
+## Desafio 08: calcular o imc de alguem e mostrar o status da pessoa
+
+altura = float(input('Digite sua altura em metros: '))
+peso = float(input('digite seu peso em Kg: '))
+imc = peso / (altura*altura)
+
+if(imc<18.5):
+    print('Você esta abaixo do peso seu imc é de {:.2f}'.format(imc))
+elif(imc<=25):
+    print('Você esta no peso ideal, seu imc é de {:.2f}'.format(imc))
+elif(imc<=30):
+    print('Você está sobrepeso, seu imc é de {}'.format(imc))
+elif(imc<=40):
+    print('Você está obeso, seu imc é de {}'.format(imc))
+else:
+    print('Você está com obesidade mórbida, seu imc é de {}'.format(imc))
+
+    ## Desafio 10: calcule o valor a ser pago por um produto considerando seu preco normal e condicao de pagamento
+    ## dinheiro a vista ou cheque 10% desconto
+    ## a vista no cartao 5% de desconto
+    ## em ate 2x no cartao preco normal
+    ## 3x ou mais no cartao 20% de juros
+
+    produto = 1000
+    condicao_pagamento = str('Insira seu m')
+
+
+    ## desafio 11: fazer o computador jogar jokenpô com o usuario
+
+    from random import choice
+    jokenpo = ['Pedra','Papel','Tesoura']
+    escolha_pc = choice(jokenpo)
+    
