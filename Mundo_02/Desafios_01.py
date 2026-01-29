@@ -14,9 +14,22 @@ if(parcela_mes>=(salario-(salario*0.7))):
 else:
     print('Seu empréstimo será \033[0;32maprovado\033[m e custará {:.2f}R$ por mês'.format(parcela_mes))
 
-## desafio 02: ver depois
-
-
+## desafio 02: Escreva um programa em Python que leia um número inteiro qualquer e peça para o usuário escolher qual será a base de conversão: 1 para binário, 2 para octal e 3 para hexadecimal.
+ 
+num = int(input('Digite um número: '))
+print('''Escolha um tipo de conversão:
+[1] binário
+[2] octal
+[3] hexadecimal''')
+opcao = int(input('Sua opcção: '))
+if(opcao == 1):
+    print('{} em binário é {}'.format(num,bin(num)[2:]))
+elif(opcao == 2):
+    print('{} em octal é {}'.format(num,oct(num)[2:]))
+elif(opcao == 3):
+    print('{} em hexadecimal é {}'.format(num,hex(num)[2:]))
+else:
+    print("Opção inválida tente novamente.")
 
 
 ## desafio 03: ler dois valores e dizer qual é maior e qual é o menor ou se os dois são iguais
@@ -124,9 +137,9 @@ from random import choice
 jokenpo = [1,2,3]
 escolha_pc = choice(jokenpo)
 escolha_usuario = int(input("""Escolha o que irá jogar:
-                            [1] Pedra
-                            [2] Papel
-                            [3] Tesoura\n"""))
+[1] Pedra
+[2] Papel
+[3] Tesoura\n"""))
 if(escolha_pc == 1 and escolha_usuario == 3):
     print('O computador escolheu pedra, você perdeu.')
 elif(escolha_pc == 2 and escolha_usuario == 1):
