@@ -45,9 +45,10 @@ else:
     print('Os dois números tem o mesmo valor.')
 
 ## desafio 04: ler o ano em que alguem nasceu e dizer se a pessoa ainda vai se alistar ou esta na hora de se alistar ou ja passou do tempo de se alistar, e mostrar quanto tempo falta ou ja passou de se alistar
-
+from datetime import date
 data_nascimento = int(input('Digite o ano em que nasceu: '))
-idade = 2026 - data_nascimento
+idade = date.today().year - data_nascimento
+print('Quem nasceu em {} tem {} anos em {}\n'.format(data_nascimento,idade,date.today().year))
 if(idade<18):
     tempo_falta= 18 - idade
     print('Você ainda vai se alistar, faltam {} ano(s) para você se alistar'.format(tempo_falta))
