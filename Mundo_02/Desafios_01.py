@@ -48,7 +48,7 @@ else:
 from datetime import date
 data_nascimento = int(input('Digite o ano em que nasceu: '))
 idade = date.today().year - data_nascimento
-print('Quem nasceu em {} tem {} anos em {}\n'.format(data_nascimento,idade,date.today().year))
+print('Quem nasceu em {} tem {} anos em {}'.format(data_nascimento,idade,date.today().year))
 if(idade<18):
     tempo_falta= 18 - idade
     print('Você ainda vai se alistar, faltam {} ano(s) para você se alistar'.format(tempo_falta))
@@ -74,7 +74,7 @@ else:
 ## desafio 06: a confederação de natação tem categorias de acordo com a idade, leia o ano de nascimento de alguem e diga sua categoria
 
 ano_nascimento = int(input('Digite o ano em que nasceu: '))
-idade = 2026 - ano_nascimento
+idade = date.today().year - ano_nascimento
 if(idade<=9):
     print('Você está na categoria Mirim!')
 elif(idade<=14):
