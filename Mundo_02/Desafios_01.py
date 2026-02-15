@@ -128,8 +128,31 @@ else:
     ## em ate 2x no cartao preco normal
     ## 3x ou mais no cartao 20% de juros
 
-    produto = 1000
-    condicao_pagamento = str('Insira seu m')
+print('{:=^40}'.format('Lojão do Tonhão'))
+preco = float(input('Quanto você comprou?: '))
+print('''Formas de pagamento:
+[1] dinheiro à vista/cheque
+[2] à vista cartão
+[3] 2x no cartão
+[4] 3x ou mais no cartão''')
+opcao = int(input('Qual sua opção?  '))
+if(opcao == 1):
+    total = preco - (preco*0.1)
+elif(opcao == 2):
+    total = preco - (preco*0.05)
+elif(opcao == 3):
+    total = preco
+    parcela = total/2
+    print('Sua compra será parcelada em 2x de R${:.2f}'.format(parcela))
+elif(opcao == 4):
+    total = preco + (preco*0.2)
+    totalparcelas = int(input('Quantas parcelas: '))
+    parcela = total/totalparcelas
+    print('Sua compra será parcelada em {:.2f}x de R${:.2f} com juros.'.format(totalparcelas,parcela))
+else:
+    total = 0
+    print('\033[0;31mOpção de pagamento inválida!\033[m \033[0;33mtente novamente!\033[m')
+print('Sua compra de R${:.2f} vai custar R${:.2f} no final.'.format(preco,total))
 
 
     ## desafio 11: fazer o computador jogar jokenpô com o usuario
