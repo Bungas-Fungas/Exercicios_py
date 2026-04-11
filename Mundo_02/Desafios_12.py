@@ -5,3 +5,4 @@ for temporizador in range(0,n+1):
     print(n)
     n -= 1
     sleep(1)
+print("\033[0;35mTe Amo Bomboncito <3\033[m")
